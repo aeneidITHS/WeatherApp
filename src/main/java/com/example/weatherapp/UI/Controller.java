@@ -1,12 +1,12 @@
 package com.example.weatherapp.UI;
 
-import com.example.weatherapp.Bussiness.WeatherSMHI.WeatherDAO;
+import com.example.weatherapp.Clients.SMHIClient;
 import org.springframework.boot.CommandLineRunner;
 @org.springframework.stereotype.Controller
 public class Controller implements CommandLineRunner {
-    WeatherDAO weatherDAO;
+    SMHIClient SMHIClient = new SMHIClient();
     @Override
     public void run(String... args) throws Exception {
-        weatherDAO.findSpeficParametersAndTime(1);
+        SMHIClient.findSpeficParametersAndTime(1);
     }
 }

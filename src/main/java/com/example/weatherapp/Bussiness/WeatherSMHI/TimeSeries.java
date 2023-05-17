@@ -19,7 +19,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "parameters"
 })
 @Generated("jsonschema2pojo")
-public class Weather {
+public class TimeSeries {
 
     @JsonProperty("validTime")
     private String validTime;
