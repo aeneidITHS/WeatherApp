@@ -19,7 +19,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "properties"
 })
 @Generated("jsonschema2pojo")
-public class METdata {
+public class WeatherServiceMET {
 
     @JsonProperty("type")
     private String type;
