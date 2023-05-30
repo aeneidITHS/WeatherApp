@@ -5,7 +5,7 @@ import com.example.weatherapp.Clients.METClient;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-public class METEntity extends WeatherWebsiteTemplate{
+public class METEntity extends WeatherWebsiteEntity {
     public METClient metClient;
     public METEntity(){
         metClient = new METClient();

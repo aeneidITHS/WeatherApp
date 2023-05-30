@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import java.time.LocalDateTime;
 
-abstract public class WeatherWebsiteTemplate {
+abstract public class WeatherWebsiteEntity {
     public Integer temperature;
     public Integer humidity;
     public LocalDateTime currentTime;
@@ -14,13 +14,13 @@ abstract public class WeatherWebsiteTemplate {
     int hour;
 
 
-    public WeatherWebsiteTemplate(Integer temperature, Integer humidity, LocalDateTime currentTime) {
+    public WeatherWebsiteEntity(Integer temperature, Integer humidity, LocalDateTime currentTime) {
         this.temperature = temperature;
         this.humidity = humidity;
         this.currentTime = currentTime;
     }
 
-    public WeatherWebsiteTemplate() {
+    public WeatherWebsiteEntity() {
     }
 
 

@@ -8,7 +8,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 @Component
-public class SHMIEntity extends WeatherWebsiteTemplate{
+public class SHMIEntity extends WeatherWebsiteEntity {
     SMHIClient smhiClient;
     public SHMIEntity() {
         smhiClient = new SMHIClient();
