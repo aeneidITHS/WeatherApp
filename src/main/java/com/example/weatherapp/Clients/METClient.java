@@ -6,7 +6,7 @@ import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
 @Service
 public class METClient {
-    public WebClient client;
+    public WebClient client = WebClient.create();
 
     public WeatherServiceMET weatherServiceMET;
 

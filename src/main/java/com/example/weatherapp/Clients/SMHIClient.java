@@ -12,7 +12,7 @@ import java.util.List;
 @Service
 public class SMHIClient {
 
-    public  WebClient client;
+    public  WebClient client = WebClient.create();
     public WeatherServiceSHMI weatherServiceSHMI;
     public SMHIClient() {
         weatherServiceSHMI =getWeatherDataSMHI();

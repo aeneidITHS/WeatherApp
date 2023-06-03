@@ -17,8 +17,8 @@ public class WebsiteController {
         this.weatherService = weatherService;
     }
     @PostMapping("time")
-    public String whatTimeDoYouWantYourWeather(Model m,@RequestParam int time){
-        m.addAttribute("bestWeather",weatherService.getBestWeather(time));
+    public String whatTimeDoYouWantYourWeather(Model m,@RequestParam int hour){
+        m.addAttribute("bestWeather",weatherService.getBestWeather(hour));
         m.addAttribute("weatherSource",weatherService.getBestWeatherSource());
         return "weatherPage";
     }

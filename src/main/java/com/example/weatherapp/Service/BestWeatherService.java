@@ -11,6 +11,12 @@ public class BestWeatherService {
     SHMIEntity SMHIEntity;
     String bestWeatherSource;
 
+    public BestWeatherService(METEntity METEntity, SHMIEntity SMHIEntity) {
+        this.METEntity = METEntity;
+        this.SMHIEntity = SMHIEntity;
+    }
+
+
     public WeatherWebsiteEntity getBestWeather(int i){
         METEntity.setHour(i);
         METEntity.updateInfo();
